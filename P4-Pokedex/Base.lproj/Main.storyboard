@@ -139,10 +139,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JLN-2v-grH">
-                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="507"/>
                                 <subviews>
                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZQ-0Y-bFS">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="507"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <wkWebViewConfiguration key="configuration">
                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -161,12 +161,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="31v-5e-U16"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="U6Q-Eh-Zy8"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="NVn-E7-CiO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="undo" id="oT3-ec-Ow4">
+                            <connections>
+                                <segue destination="F9d-Z5-cdP" kind="unwind" identifier="goHome" unwindAction="goHomeWithSegue:" id="lgv-OY-axp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="racenameWeb" destination="sZQ-0Y-bFS" id="g7O-JZ-bJm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiF-P9-Od7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="F9d-Z5-cdP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1176.8" y="28.335832083958024"/>
         </scene>

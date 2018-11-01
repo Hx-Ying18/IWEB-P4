@@ -18,9 +18,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "http://es.pokemon.wikia/"+racename)
+        let url = URL(string: "http://es.pokemon.wikia.com/wiki/"+racename)
         let request = URLRequest(url: url!)
         racenameWeb.load(request)
+        self.title = racename
     }
 
     override func didReceiveMemoryWarning() {
