@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController {
 
     var racename: String = ""
     
+    @IBOutlet weak var racenameWeb: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = URL(string: "http://es.pokemon.wikia/"+racename)
+        let request = URLRequest(url: url!)
+        racenameWeb.load(request)
     }
 
     override func didReceiveMemoryWarning() {

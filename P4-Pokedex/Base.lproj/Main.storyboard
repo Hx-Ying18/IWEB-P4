@@ -133,7 +133,7 @@
         <!--Title-->
         <scene sceneID="NlQ-6z-Xrh">
             <objects>
-                <viewController id="5Ga-JJ-3Xr" sceneMemberID="viewController">
+                <viewController id="5Ga-JJ-3Xr" customClass="ViewController" customModule="P4_Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PYm-hn-Li2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,6 +162,9 @@
                         <viewLayoutGuide key="safeArea" id="31v-5e-U16"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="U6Q-Eh-Zy8"/>
+                    <connections>
+                        <outlet property="racenameWeb" destination="sZQ-0Y-bFS" id="g7O-JZ-bJm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiF-P9-Od7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
