@@ -102,5 +102,16 @@ class RacesTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Show Racename"{
+            let vcrn = segue.destination as! ViewController
+            
+            if let ip = tableView.indexPathForSelectedRow{
+                vcrn.racename = (type?.races[ip.row].name)!
+            }
+            
+        }
+    }
 
 }

@@ -76,7 +76,7 @@
                             <outlet property="delegate" destination="F1i-f4-jaw" id="Dt5-D8-obg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tipos Pokedex" id="OBX-GV-Lp4"/>
+                    <navigationItem key="navigationItem" title="Tipos Pokedex" largeTitleDisplayMode="always" id="OBX-GV-Lp4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxg-Wb-4dG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +115,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="5Ga-JJ-3Xr" kind="show" id="sXm-YB-5O3"/>
+                                    <segue destination="5Ga-JJ-3Xr" kind="show" identifier="Show Racename" id="sXm-YB-5O3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -124,13 +124,13 @@
                             <outlet property="delegate" destination="6pK-56-9m5" id="Hwa-sC-edt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="olh-cB-T7H"/>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="olh-cB-T7H"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nl7-rD-Afd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="401" y="29"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="NlQ-6z-Xrh">
             <objects>
                 <viewController id="5Ga-JJ-3Xr" sceneMemberID="viewController">
@@ -161,7 +161,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="31v-5e-U16"/>
                     </view>
-                    <navigationItem key="navigationItem" id="U6Q-Eh-Zy8"/>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="U6Q-Eh-Zy8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiF-P9-Od7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
