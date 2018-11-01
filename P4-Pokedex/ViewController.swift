@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "http://es.pokemon.wikia.com/wiki/"+racename)
+        let path = "http://es.pokemon.wikia.com/wiki/"+racename
+        let escapedPath = path.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
+        let url = URL(string: escapedPath!)
         let request = URLRequest(url: url!)
         racenameWeb.load(request)
         self.title = racename
