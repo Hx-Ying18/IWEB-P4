@@ -47,7 +47,7 @@ class TypesTableViewController: UITableViewController {
         let type = model.types[indexPath.row]
         cell.nameLabel.text = type.name
         cell.iconImage.image = UIImage(named: type.icon)
-        cell.counterLabel.text = "\(type.races.count) razas"
+        cell.counterLabel.text = "# \(type.races.count) razas"
 
         return cell
     }
