@@ -12,6 +12,8 @@ class RacesTableViewController: UITableViewController {
 
     var type: Type?
     
+    var model = PokedexModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,24 +32,29 @@ class RacesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+  
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        // return model.races.count Not hwo much different type of races but the number of races in the selected type
+        return type?.races.count ?? 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Race Cell", for: indexPath)
 
-        // Configure the cell...
+        // Configure the cell
+        
+        let race = type!.races[indexPath.row] // Must be the races of the selected type
+        cell.textLabel?.text = race.name
+        cell.detailTextLabel?.text = "\(race.code)"
+        cell.imageView?.image = UIImage(named: race.icon)
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
