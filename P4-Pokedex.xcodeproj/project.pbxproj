@@ -12,8 +12,10 @@
 		3A5100F4218AF26B001EE4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5100F2218AF26B001EE4BE /* Main.storyboard */; };
 		3A5100F6218AF26B001EE4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5100F5218AF26B001EE4BE /* Assets.xcassets */; };
 		3A5100F9218AF26B001EE4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5100F7218AF26B001EE4BE /* LaunchScreen.storyboard */; };
-		3A510104218AF26B001EE4BE /* P4_PokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A510103218AF26B001EE4BE /* P4_PokedexTests.swift */; };
-		3A51010F218AF26B001EE4BE /* P4_PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A51010E218AF26B001EE4BE /* P4_PokedexUITests.swift */; };
+		3A51011D218B1634001EE4BE /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A51011C218B1634001EE4BE /* Type.swift */; };
+		3A510120218B1644001EE4BE /* PokedexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A51011E218B1644001EE4BE /* PokedexModel.swift */; };
+		3A510121218B1644001EE4BE /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A51011F218B1644001EE4BE /* Race.swift */; };
+		3A510124218B16E2001EE4BE /* pokedex.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A510123218B16E2001EE4BE /* pokedex.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +44,11 @@
 		3A5100F8218AF26B001EE4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A5100FA218AF26B001EE4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5100FF218AF26B001EE4BE /* P4-PokedexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "P4-PokedexTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A510103218AF26B001EE4BE /* P4_PokedexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P4_PokedexTests.swift; sourceTree = "<group>"; };
-		3A510105218AF26B001EE4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A51010A218AF26B001EE4BE /* P4-PokedexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "P4-PokedexUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A51010E218AF26B001EE4BE /* P4_PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P4_PokedexUITests.swift; sourceTree = "<group>"; };
-		3A510110218AF26B001EE4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A51011C218B1634001EE4BE /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		3A51011E218B1644001EE4BE /* PokedexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokedexModel.swift; sourceTree = "<group>"; };
+		3A51011F218B1644001EE4BE /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		3A510123218B16E2001EE4BE /* pokedex.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pokedex.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				3A5100ED218AF26B001EE4BE /* P4-Pokedex */,
-				3A510102218AF26B001EE4BE /* P4-PokedexTests */,
-				3A51010D218AF26B001EE4BE /* P4-PokedexUITests */,
 				3A5100EC218AF26B001EE4BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +97,7 @@
 		3A5100ED218AF26B001EE4BE /* P4-Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				3A510122218B16C9001EE4BE /* Model */,
 				3A5100EE218AF26B001EE4BE /* AppDelegate.swift */,
 				3A5100F0218AF26B001EE4BE /* ViewController.swift */,
 				3A5100F2218AF26B001EE4BE /* Main.storyboard */,
@@ -107,22 +108,15 @@
 			path = "P4-Pokedex";
 			sourceTree = "<group>";
 		};
-		3A510102218AF26B001EE4BE /* P4-PokedexTests */ = {
+		3A510122218B16C9001EE4BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3A510103218AF26B001EE4BE /* P4_PokedexTests.swift */,
-				3A510105218AF26B001EE4BE /* Info.plist */,
+				3A51011C218B1634001EE4BE /* Type.swift */,
+				3A51011E218B1644001EE4BE /* PokedexModel.swift */,
+				3A51011F218B1644001EE4BE /* Race.swift */,
+				3A510123218B16E2001EE4BE /* pokedex.plist */,
 			);
-			path = "P4-PokedexTests";
-			sourceTree = "<group>";
-		};
-		3A51010D218AF26B001EE4BE /* P4-PokedexUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3A51010E218AF26B001EE4BE /* P4_PokedexUITests.swift */,
-				3A510110218AF26B001EE4BE /* Info.plist */,
-			);
-			path = "P4-PokedexUITests";
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +229,7 @@
 				3A5100F9218AF26B001EE4BE /* LaunchScreen.storyboard in Resources */,
 				3A5100F6218AF26B001EE4BE /* Assets.xcassets in Resources */,
 				3A5100F4218AF26B001EE4BE /* Main.storyboard in Resources */,
+				3A510124218B16E2001EE4BE /* pokedex.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +256,9 @@
 			files = (
 				3A5100F1218AF26B001EE4BE /* ViewController.swift in Sources */,
 				3A5100EF218AF26B001EE4BE /* AppDelegate.swift in Sources */,
+				3A510120218B1644001EE4BE /* PokedexModel.swift in Sources */,
+				3A51011D218B1634001EE4BE /* Type.swift in Sources */,
+				3A510121218B1644001EE4BE /* Race.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A510104218AF26B001EE4BE /* P4_PokedexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A51010F218AF26B001EE4BE /* P4_PokedexUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
