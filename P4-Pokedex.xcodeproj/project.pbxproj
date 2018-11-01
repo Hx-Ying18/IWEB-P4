@@ -18,6 +18,7 @@
 		3A510124218B16E2001EE4BE /* pokedex.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A510123218B16E2001EE4BE /* pokedex.plist */; };
 		3AAF332F218B19760052B590 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF332E218B19760052B590 /* TypesTableViewController.swift */; };
 		3AAF3331218B23D30052B590 /* TypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF3330218B23D30052B590 /* TypeTableViewCell.swift */; };
+		3AAF3333218B2BC20052B590 /* RacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAF3332218B2BC20052B590 /* RacesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3A510123218B16E2001EE4BE /* pokedex.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pokedex.plist; sourceTree = "<group>"; };
 		3AAF332E218B19760052B590 /* TypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		3AAF3330218B23D30052B590 /* TypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTableViewCell.swift; sourceTree = "<group>"; };
+		3AAF3332218B2BC20052B590 /* RacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3A5100F0218AF26B001EE4BE /* ViewController.swift */,
 				3AAF332E218B19760052B590 /* TypesTableViewController.swift */,
 				3AAF3330218B23D30052B590 /* TypeTableViewCell.swift */,
+				3AAF3332218B2BC20052B590 /* RacesTableViewController.swift */,
 				3A5100F2218AF26B001EE4BE /* Main.storyboard */,
 				3A5100F5218AF26B001EE4BE /* Assets.xcassets */,
 				3A5100F7218AF26B001EE4BE /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				3A51011D218B1634001EE4BE /* Type.swift in Sources */,
 				3A510121218B1644001EE4BE /* Race.swift in Sources */,
 				3AAF332F218B19760052B590 /* TypesTableViewController.swift in Sources */,
+				3AAF3333218B2BC20052B590 /* RacesTableViewController.swift in Sources */,
 				3AAF3331218B23D30052B590 /* TypeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

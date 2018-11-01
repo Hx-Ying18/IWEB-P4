@@ -1,5 +1,5 @@
 //
-//  TypesTableViewController.swift
+//  RacesTableViewController.swift
 //  P4-Pokedex
 //
 //  Created by Adrian on 01/11/2018.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class TypesTableViewController: UITableViewController {
+class RacesTableViewController: UITableViewController {
 
-    var model = PokedexModel()
+    var type: Type?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,38 +30,24 @@ class TypesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return model.types.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Type Cell", for: indexPath) as! TypeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell
-        
-        let type = model.types[indexPath.row]
-        cell.nameLabel.text = type.name
-        cell.iconImage.image = UIImage(named: type.icon)
-        cell.counterLabel.text = "\(type.races.count) razas"
+        // Configure the cell...
 
         return cell
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "Show Race"){
-            let rtvc = segue.destination as! RacesTableViewController
-            
-            if let ip = tableView.indexPathForSelectedRow{
-                rtvc.type = model.types[ip.row]
-            }
-        }
-        else{}
-    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

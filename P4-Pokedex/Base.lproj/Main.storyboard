@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +30,7 @@
                                             <rect key="frame" x="10" y="0.0" width="331" height="107.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="NhL-Ey-Bfh">
-                                                    <rect key="frame" x="0.0" y="31" width="203" height="46"/>
+                                                    <rect key="frame" x="0.0" y="31" width="223.5" height="46"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Race" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd0-kF-cfV">
                                                             <rect key="frame" x="0.0" y="0.0" width="56.5" height="31.5"/>
@@ -46,7 +47,10 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UKy-oG-KsE">
-                                                    <rect key="frame" x="203" y="11" width="128" height="86"/>
+                                                    <rect key="frame" x="223.5" y="0.0" width="107.5" height="107.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="UKy-oG-KsE" secondAttribute="height" multiplier="1:1" id="lCO-MQ-kvQ"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </stackView>
@@ -62,6 +66,7 @@
                                     <outlet property="counterLabel" destination="3De-UR-LKZ" id="aSx-f7-Q2Y"/>
                                     <outlet property="iconImage" destination="UKy-oG-KsE" id="Ftc-b8-S8G"/>
                                     <outlet property="nameLabel" destination="rd0-kF-cfV" id="byK-Wy-O3s"/>
+                                    <segue destination="6pK-56-9m5" kind="show" identifier="Show race" id="wdn-Wg-PAm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -76,12 +81,40 @@
             </objects>
             <point key="canvasLocation" x="-351.19999999999999" y="29.23538230884558"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="2cq-nf-s8D">
+            <objects>
+                <tableViewController id="6pK-56-9m5" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="inD-Pt-8bp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vnr-Il-ee6">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vnr-Il-ee6" id="BOZ-ST-8dA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6pK-56-9m5" id="bQU-9m-9Ny"/>
+                            <outlet property="delegate" destination="6pK-56-9m5" id="Hwa-sC-edt"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nl7-rD-Afd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="29"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="KVk-4h-QX3">
             <objects>
                 <navigationController id="kAK-rV-xhA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wvV-gI-i47">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="wvV-gI-i47">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
