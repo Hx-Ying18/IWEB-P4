@@ -18,12 +18,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let path = "http://es.pokemon.wikia.com/wiki/"+racename
-        let escapedPath = path.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)
-        let url = URL(string: escapedPath!)
+        let base = "http://es.pokemon.wikia.com/wiki/"
+        if let escapedPath = racename.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed){
+        print(escapedPath)
+        let escapedUrl = "\(base)\(escapedPath)"
+        let url = URL(string: escapedUrl)
         let request = URLRequest(url: url!)
         racenameWeb.load(request)
         self.title = racename
+        }
     }
 
     override func didReceiveMemoryWarning() {
