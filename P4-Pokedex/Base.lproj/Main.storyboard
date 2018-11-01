@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -113,6 +114,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5Ga-JJ-3Xr" kind="show" id="sXm-YB-5O3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -125,6 +129,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nl7-rD-Afd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="401" y="29"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NlQ-6z-Xrh">
+            <objects>
+                <viewController id="5Ga-JJ-3Xr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PYm-hn-Li2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JLN-2v-grH">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZQ-0Y-bFS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="31v-5e-U16" firstAttribute="trailing" secondItem="JLN-2v-grH" secondAttribute="trailing" id="Peu-84-UW4"/>
+                            <constraint firstItem="JLN-2v-grH" firstAttribute="top" secondItem="31v-5e-U16" secondAttribute="top" id="a2i-zJ-xLe"/>
+                            <constraint firstItem="31v-5e-U16" firstAttribute="bottom" secondItem="JLN-2v-grH" secondAttribute="bottom" id="kZC-70-Bxe"/>
+                            <constraint firstItem="JLN-2v-grH" firstAttribute="leading" secondItem="31v-5e-U16" secondAttribute="leading" id="wPy-2j-9a5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="31v-5e-U16"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U6Q-Eh-Zy8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiF-P9-Od7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176.8" y="28.335832083958024"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KVk-4h-QX3">
