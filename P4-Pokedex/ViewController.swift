@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var racename: String
+    var racename: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
