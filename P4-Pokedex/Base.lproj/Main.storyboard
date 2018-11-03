@@ -76,16 +76,18 @@
                             <outlet property="delegate" destination="F1i-f4-jaw" id="Dt5-D8-obg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tipos Pokedex" largeTitleDisplayMode="always" id="OBX-GV-Lp4"/>
+                    <navigationItem key="navigationItem" title="Tipos Pokedex" largeTitleDisplayMode="always" id="OBX-GV-Lp4">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="jQI-rg-4wv"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxg-Wb-4dG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-351.19999999999999" y="29.23538230884558"/>
         </scene>
-        <!--Title-->
+        <!--Races Pokedex-->
         <scene sceneID="2cq-nf-s8D">
             <objects>
-                <tableViewController id="6pK-56-9m5" customClass="RacesTableViewController" customModule="P4_Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="6pK-56-9m5" userLabel="Races Pokedex" customClass="RacesTableViewController" customModule="P4_Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="inD-Pt-8bp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,16 +126,16 @@
                             <outlet property="delegate" destination="6pK-56-9m5" id="Hwa-sC-edt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="olh-cB-T7H"/>
+                    <navigationItem key="navigationItem" title="Title" id="nUo-WM-hXv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nl7-rD-Afd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="401" y="29"/>
         </scene>
-        <!--Title-->
+        <!--Race Pokedex-->
         <scene sceneID="NlQ-6z-Xrh">
             <objects>
-                <viewController id="5Ga-JJ-3Xr" customClass="ViewController" customModule="P4_Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Ga-JJ-3Xr" userLabel="Race Pokedex" customClass="ViewController" customModule="P4_Pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PYm-hn-Li2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
