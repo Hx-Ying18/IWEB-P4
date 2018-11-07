@@ -108,7 +108,4 @@ class TypesTableViewController: UITableViewController {
     }
     */
 
-    @IBAction func goHome (segue: UIStoryboardSegue){
-        
-    }
 }

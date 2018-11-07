@@ -167,7 +167,7 @@
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="NVn-E7-CiO">
                         <barButtonItem key="rightBarButtonItem" systemItem="undo" id="oT3-ec-Ow4">
                             <connections>
-                                <segue destination="F9d-Z5-cdP" kind="unwind" identifier="goHome" unwindAction="goHomeWithSegue:" id="lgv-OY-axp"/>
+                                <action selector="undoButtonTapped:" destination="5Ga-JJ-3Xr" id="1kv-uC-AZ9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -177,7 +177,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiF-P9-Od7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="F9d-Z5-cdP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1176.8" y="28.335832083958024"/>
         </scene>

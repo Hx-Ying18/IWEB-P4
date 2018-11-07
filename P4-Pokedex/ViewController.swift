@@ -34,6 +34,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func undoButtonTapped(_ sender: UIBarButtonItem) {
+        
+        if racenameWeb.canGoBack {
+            racenameWeb.goBack()
+        }
+        
+    }
+    
 }
 
